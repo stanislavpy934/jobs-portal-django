@@ -1,0 +1,28 @@
+{% extends 'website/parts/base.html' %}
+{% load static %}
+{% block title %}
+  Дошка вакансій
+{% endblock %}
+{% block content %}
+  <div class="slider_area">
+    <div class="single_slider d-flex align-items-center slider_bg_1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-md-6">
+            <div class="slider_text">
+              <h5 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">4537+ вакансій</h5>
+              <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Знайдіть роботу мрії</h3>
+              <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">Ми допомагаємо знайти роботу швидко та просто</p>
+              <div class="sldier_btn wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                <a href="{% url 'jobs' %}" class="boxed-btn3">Знайти роботу</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ilstration_img wow fadeInRight d-none d-lg-block text-right" data-wow-duration="1s" data-wow-delay=".2s">
+      <img src="{% static 'img/banner/illustration.png' %}" alt="" />
+    </div>
+  </div>
+{% endblock %}
